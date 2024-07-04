@@ -1,0 +1,147 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.flashcard {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.flashcard:hover {
+  transform: scale(1);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #333;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.calculate-btn {
+  background-color: #007bff;
+}
+
+.calculate-btn:hover {
+  background-color: #0056b3;
+}
+
+.reset-btn {
+  background-color: #ff4757;
+}
+
+.reset-btn:hover {
+  background-color: #e04040;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+.bmi {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.message {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.message.underweight {
+  color: #ff9800;
+}
+
+.message.normal-weight {
+  color: #4caf50;
+}
+
+.message.overweight {
+  color: #f44336;
+}
+
+.weight-difference {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.bmi-bar {
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.bmi-progress {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 10px;
+}
